@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ body{
+            box-sizing: border-box;
+
+        }
+        .main{
+
+          display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            position: relative;
+            justify-content: center;
+    align-items: center;
+
+        }
+        .dhoni{
+            width:450px ;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+   margin: 25px;
+    gap:15px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+        }
+        button:hover{
+    background-color:lawngreen;
+    color: bold black;
+    transform: 6s;
+}
+</style>
+<body style="background-color:blanchedalmond">
+    <h1>
+        This is images selecting and changeing the color
+    </h1>
+    <!-- <img src="/images/dhoni.jpg"height="200">
+    <button onclick="">DHONI</button>
+    <img src="/images/Prabhas.jpg"/>
+    <button onclick="">prabhas</button>
+    <img src="images/Swamivevakandha.jpg"/>
+    <button onclick="">Swamivivakanadha</button> -->
+    
+    <div class="main">
+        <div class=" dhoni"> <img src="/images/dhoni.jpg">
+        <button onclick="Dhonibg()">DHONI</button>
+        <P>This is dhoni pic</P>
+    </div>
+    <div class="dhoni">
+         <img src="images/Prabhas.jpg">
+        <button onclick="prabhas()">Prabhas</button>
+        <P>This is prabhas</P>
+    </div>
+    <div class="dhoni">
+    <img src="images/Swamivevakandha.jpg"/> 
+        <button onclick="Swami()">Swamivenakanadha</button>
+        <P>This is Swamivevakandha</P>
+    </div>
+</div>
+    <script>
+        function Dhonibg(){
+            document.body.style.backgroundColor="yellow";
+        }
+        function prabhas(){
+            document.body.style.backgroundColor=" black";
+        }
+        function Swami(){
+            document.body.style.backgroundColor="orange";
+        }
+    </script>
+</body>
+</html>
